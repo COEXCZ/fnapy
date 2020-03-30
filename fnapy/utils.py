@@ -276,7 +276,7 @@ def get_url(sandbox=True):
     :returns: the entrypoint url to access the FNAC WebServices
 
     """
-    use_sandbox = {True: "https://marketplace.ws.fd-recette.net/api.php/",
+    use_sandbox = {True: "https://partners-test.mp.fnacdarty.com/api.php/",
                    False: "https://vendeur.fnac.com/api.php/"}
     return use_sandbox[sandbox]
 
