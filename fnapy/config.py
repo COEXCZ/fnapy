@@ -103,6 +103,7 @@ internal_comment = Parameter('internal_comment',
 showcase = Parameter('showcase', 'Offer position in shop’s showcase')
 treatment = Parameter('treatment', 'Treatment to do on offer')
 pictures = Parameter('pictures', 'Add pictures to offer')
+time_to_ship = Parameter('time_to_ship', 'Time to ship of offer ')
 
 # The elements for the requests
 REQUEST_ELEMENTS = {}
@@ -113,7 +114,7 @@ REQUEST_ELEMENTS['offers_query'] = (
 REQUEST_ELEMENTS['offers_update'] = (
     product_reference, offer_reference, price, product_state,
     quantity.change_desc('Offer quantity'), description,
-    internal_comment, showcase, treatment, pictures
+    internal_comment, showcase, treatment, pictures, time_to_ship
 )
 REQUEST_ELEMENTS['orders_query'] = (
     paging, date, sort_by, product_fnac_id, offer_fnac_id,
